@@ -26,9 +26,7 @@ Presently, the Form name has to contain the word **POC** for it to be deemed val
 
 ## Step 3. Add a page
 
-Add a page by clicking `Create new page`. This should launch a modal where you can provide a page label.
-
-Let's add a page labelled `Consent Elicitation`.
+Add a page by clicking `Create new page`. This should launch a modal where you can provide a page label. Let's add a page labelled `Consent Elicitation`.
 
 ![Add a page to the form](/img/add-page.png)
 
