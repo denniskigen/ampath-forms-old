@@ -85,9 +85,7 @@ In practice, your form will likely have more than one page. As mentioned before,
 
 A section is an element of a form schema that groups together related questions. Sections will be rendered in "collapsed mode" by default. Set `isExpanded` to `true` in the section definition if you want to render the section in "expanded mode".
 
-There are two ways to build section definitions in AMPATH Forms:
-
-1. Constructing the section definition _manually_ by providing a section **label** and a **questions** array, and optionally, an **isExpanded** boolean value:
+Below is an example of an `Encounter Details` page with a section labelled `Encounter Info`.
 
 ```json
 {
@@ -96,7 +94,7 @@ There are two ways to build section definitions in AMPATH Forms:
       "label": "Encounter Details",
       "sections": [
         {
-          "label": "Encounter Details",
+          "label": "Encounter Info",
           "isExpanded": "true",
           "questions": [
             {
@@ -141,7 +139,7 @@ There are two ways to build section definitions in AMPATH Forms:
 }
 ```
 
-2. Referencing sections from component forms _imported in_ using the [Reference forms](/platform/referencing-forms) feature.
+Sections can also be constructed by referencing sections from component forms _imported in_ using the [Reference forms](/platform/referencing-forms) feature.
 
 ```json
 {
@@ -243,7 +241,7 @@ All questions have a **label**, and **id**, a **rendering** type**,** and a set 
 - `questionOptions`: An object containing the following properties:
 
   - `rendering`: The field type of the question. The most common field types are **text** (for text inputs), **select** (for select fields) and **date** (for date fields). See the [Field types reference](/platform/fields-reference) for a full list of rendering types.
-  - `concept`: The concept UUID of the backing concept for this field.
+  - `concept`: The concept UUID of the backing concept for this field. You can get this concept UUID from searching in the Concept Dictionary.
   - `answers`: An array of answers scoped to a question. An answer definition consists of a concept UUID and label pair. Below is an example of answers to a `Current HIV status` question:
 
     ```json
