@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Field Types Reference
 
-AMPATH Forms support multiple field types. The most common fields include `text`, `textarea`, `number`, `date`, `select`, `radio` and `checkbox`.
+AMPATH Forms support multiple field types. The most commonly used fields include `text`, `textarea`, `number`, `date` and `select`.
 
 Field types are defined in the `questionOptions` definition of a question using the following syntax:
 
@@ -20,7 +20,7 @@ Field types are defined in the `questionOptions` definition of a question using 
 
 Renders a text input.
 
-Below is an example showing a text input. This is input is shown when `Other treatment methods e.g. Hysterectomy, Cone biopsy` is selected as the answer to the `Treatment method` question. This input allows the user to specify the treatment method chosen for that visit by typing text into the text field.
+Below is an example showing a text input. This input is shown when `Other treatment methods e.g. Hysterectomy, Cone biopsy` is selected as the answer to the `Treatment method` question. This input allows the user to specify the treatment method chosen for that visit by typing text into the text field.
 
 ![Text field](/img/fields-reference/text.png)
 
@@ -46,7 +46,7 @@ The code for this is as follows:
 
 Renders a number input. You can specify optional `min` and `max` values in the `questionOptions` definition of a number input. When present, these serve as upper and lower bounds for constraining the provided input. Validation is automatically provided for min and max values.
 
-Below is an example showing a couple of number inputs used to establish the number of pregnancies a patient and had (gravida), as well as the number of pregnancies had that have been brought to term (parity).
+Below is an example showing a couple of number inputs used to establish the number of pregnancies a patient has had (gravida), as well as the number of pregnancies that have been brought to term (parity).
 
 ![Number field](/img/fields-reference/number.png)
 
@@ -83,13 +83,7 @@ The code for this is as follows:
         "rendering": "number",
         "min": "0"
       },
-      "validators": [
-        {
-          "type": "js_expression",
-          "failsWhenExpression": "!isEmpty(noPregnancy) && isEmpty(myValue) && noPregnancy < noDelivery))",
-          "message": "Parity should not be greater than gravida."
-        }
-      ],
+      "validators": [],
       "hide": {
         "hideWhenExpression": "sex !== 'F'"
       }
@@ -102,7 +96,7 @@ The code for this is as follows:
 
 Renders a dropdown list.
 
-Below is an example of a select field from a Cervical Cancer screening visit form. Clicking inside the field reveals a dropdown with a list of options. You can only select one option from a select field. If you wish to be able to select more than one option, use a multiCheckbox field instead.
+Below is an example of a select field from a Cervical Cancer screening visit form. Clicking inside the field reveals a dropdown with a list of options. You can only select one option from a select field. If you wish to be able to select more than one option, use a [multiCheckbox](/platform/fields-reference#multicheckbox) field instead.
 
 ![Select field](/img/fields-reference/select.png)
 
@@ -161,7 +155,7 @@ The code for this is as follows:
 
 ## date
 
-Renders a date input. When clicked, the input reveals a date picker with the current date as the default value. You can optionally choose to a dropdown with a list of weeks in addition to the date picker. When specified, choosing a week from the weeks list will result in the datepicker adjusting to show the first date of that week as its default value.
+Renders a date input. When clicked, the input reveals a date picker with the current date as the default value. You can optionally choose to show a dropdown with a list of weeks in addition to the date picker. When specified, choosing a week from the weeks list will result in the datepicker adjusting to show the first date of that week as its default value.
 
 Below is an example of a date field where you can specify the patient's return to clinic date.
 
@@ -208,7 +202,7 @@ The code for this is as follows:
 
 Renders a multiple-choice select field. This kind of field differs from a select in that it allows you to select more than one option.
 
-Below is an example of a multiple-choice field showing three Cervical cancer screening methods as options: VIA or VIA/VILI, HPV, and Pap smear. From them, the image shows that `VIA or VIA/VILI` and `Pap smear` have been selected.
+Below is an example of a multiple-choice field showing three Cervical cancer screening methods as options: VIA or VIA/VILI, HPV, and Pap smear. In the screenshot below, `VIA or VIA/VILI` and `Pap smear` have been selected.
 
 ![Multi-Select field](/img/fields-reference/multi-select.png)
 
@@ -284,7 +278,47 @@ The code for this is as follows:
 
 ## radio
 
-Renders a radio input.
+Renders a radio input. You can select at most one option from a radio list.
+
+Below is an example of a radio input for a field labelled `Type of Care` with options for HIV Care:
+
+![Radio field](/img/fields-reference/radio.png).
+
+The code for this is as follows:
+
+```json
+{
+  "label": "Type of care:",
+  "type": "obs",
+  "id": "careType",
+  "questionOptions": {
+    "concept": "45389fad-ecb2-4346-aaad-053215081f5e",
+    "rendering": "radio",
+    "answers": [
+      {
+        "concept": "b412ae76-4ab4-4d00-800e-bd8d167769e1",
+        "label": "HIV"
+      },
+      {
+        "concept": "6b15e4fa-6897-4d69-adcf-5908abade719",
+        "label": "TB"
+      },
+      {
+        "concept": "a8a17d80-1350-11df-a1f1-0026b9348838",
+        "label": "PMTCT"
+      },
+      {
+        "concept": "12550258-d797-43d9-a282-e35908c33fe4",
+        "label": "Resistance"
+      },
+      {
+        "concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
+        "label": "Other"
+      }
+    ]
+  }
+}
+```
 
 ## ui-select-extended
 
