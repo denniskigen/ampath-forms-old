@@ -44,13 +44,13 @@ Add a question by clicking `Create new question`.
 
 ![Add a question to the form](/img/add-question.png)
 
-This launches the **Question Editor** panel. Read more about what constitutes a question definition in [Question](/platform/core-concepts#question) guide.
+This launches the **Question Editor** panel. Read more about what constitutes a question definition in the [Question](/platform/core-concepts#question) guide.
 
 Fill the Question Editor fields with the following information:
 
 ![Configure question options](/img/configure-question-options.png)
 
-Enter `CONSENT` in the Concept field. This should launch the **Concept Search** modal.
+Enter `PATIENT CONSENT PROVIDED` in the Concept field. This should launch the **Concept Search** modal. The Form Builder is linked to a Concept Dictionary. This Concept Search modal allows you to perform a concept search based on either a concept name, concept ID, or concept UUID. In this example, the Concept Dictionary in use is the AMPATH Concept Dictionary. The `PATIENT CONSENT PROVIDED` concept referenced here has the ID `7656`.
 
 ![Concept search modal](/img/concept-modal.png)
 
