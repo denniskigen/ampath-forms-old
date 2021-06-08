@@ -358,11 +358,102 @@ TODO
 
 ## repeating
 
-TODO
+Renders a repeating group field.
+
+![Repeating group field](/img/fields-reference/repeating-group.gif)
+
+```json
+{
+  "label": "Test orders",
+  "sections": [
+    {
+      "label": "Test Orders",
+      "isExpanded": "true",
+      "questions": [
+        {
+          "type": "obsGroup",
+          "label": "Test orders",
+          "questionOptions": {
+            "concept": "af46861e-597a-48a3-b3d4-a134d0b1c5fa",
+            "rendering": "group"
+          },
+          "questions": [
+            {
+              "label": "Tests Ordered",
+              "id": "order1",
+              "type": "testOrder",
+              "questionOptions": {
+                "rendering": "repeating",
+                "orderSettingUuid": "6f0c9a92-6f24-11e3-af88-005056821db0",
+                "orderType": "testorder",
+                "selectableOrders": [
+                  {
+                    "concept": "a896cce6-1350-11df-a1f1-0026b9348838",
+                    "label": "CD4"
+                  },
+                  {
+                    "concept": "7243bed9-0bc7-4702-af28-a06ab1981e19",
+                    "label": "Crag test"
+                  },
+                  {
+                    "concept": "57677735-4310-4841-8902-dae4bac24d20",
+                    "label": "DST"
+                  },
+                  {
+                    "concept": "a8945d4e-1350-11df-a1f1-0026b9348838",
+                    "label": "Sputum AFB"
+                  },
+                  {
+                    "concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
+                    "label": "Other"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": " !arrayContains(['d164c76c-cc91-4ac2-89e9-ab7c29152ee0','824cf3e6-dd16-4767-ba41-2e04dede349e'], visitType.uuid)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## drug
 
-TODO
+Renders a dropdown list that is hooked up to a drug `DataSource`. This field will only render concepts with class `Drug`.
+
+![Drug field](/img/fields-reference/drug.gif)
+
+```json
+{
+  "label": "Additional Medication Orders",
+  "questions": [
+    {
+      "type": "obsGroup",
+      "label": "Additional medication orders",
+      "questionOptions": {
+        "rendering": "repeating",
+        "concept": "a8a0654e-1350-11df-a1f1-0026b9348838"
+      },
+      "questions": [
+        {
+          "label": "Drug",
+          "questionOptions": {
+            "concept": "a8a060c6-1350-11df-a1f1-0026b9348838",
+            "rendering": "drug"
+          },
+          "type": "obs",
+          "validators": []
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## file
 
