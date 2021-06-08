@@ -18,7 +18,9 @@ Click the **Create New** button. You will be directed to the Schema Editor UI sh
 
 ![Schema editor](/img/schema-editor.png)
 
-Launch the **Schema Builder** by clicking the hamburger menu in the top-left of the page to begin constructing your schema. Type in `Test POC Patient Consent Form v1.0` as the name of your Form. Click the green tick when done to update the schema.
+Launch the **Schema Builder** by clicking the hamburger menu in the top-left of the page to begin constructing your schema.
+
+Type in `Test POC Patient Consent Form v1.0` as the name of your Form. Click the green tick when done to update the schema.
 
 ![Specify the name of the form](/img/add-form-name.png)
 
@@ -32,7 +34,7 @@ Add a page by clicking `Create new page`. This should launch a modal where you c
 
 ## Step 4. Add a section
 
-Add a section by clicking `Create new section`. We'll add a section to the Form labelled `Consent`. Make sure to set `isExpanded` to `true` so the section doesn't get rendered in collapsed mode.
+Add a section by clicking `Create new section`. We'll add a section to the Form labelled `Consent`. Sections are rendered in collapsed mode by default. Make sure to set `isExpanded` to `true` so the section gets rendered in expanded mode.
 
 ![Add a section to the form](/img/add-section.png)
 
@@ -42,7 +44,9 @@ Add a question by clicking `Create new question`.
 
 ![Add a question to the form](/img/add-question.png)
 
-This launches the **Question Editor** panel. Fill in the following information:
+This launches the **Question Editor** panel. Read more about what constitutes a question definition in [Question](/platform/core-concepts#question) guide.
+
+Fill the Question Editor fields with the following information:
 
 ![Configure question options](/img/configure-question-options.png)
 

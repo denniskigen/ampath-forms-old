@@ -46,7 +46,7 @@ You can access the Schema Editor in two ways:
 
 ### Features
 
-- The **Interactive Schema Builder**. Accessible by clicking the hamburger menu at the far left of the navigation bar.
+- The interactive **Schema Builder**. Accessible by clicking the hamburger menu at the far left of the navigation bar.
 - The **File** menu. From it, you can either:
 
   - Save a Form locally by persisting the schema to your browser's LocalStorage.
