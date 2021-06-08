@@ -24,7 +24,7 @@ Once logged in, you should see this landing page.
 
 Features on this page include:
 
-- The **Create New** button. Clicking on this launches the schema editor.
+- The **Create New** button. Clicking on this launches the Schema Editor.
 - The **Forms List view** dropdown. You can use it to toggle between displaying Forms and Components.
 - The **Forms List search bar**. You can use it to search through the available Forms by name. You can also use the Published filter to limit your search to only forms that are published.
 - The **Forms List** - A list of all the Forms saved to the backend server. From it, you can see the Form names and versions, their published status, their retired status, and a list of actions you can take. These actions include the ability to:

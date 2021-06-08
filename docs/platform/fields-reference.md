@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Field Types Reference
 
-AMPATH forms support multiple field types. The most common fields include `text`, `textarea`, `number`, `date`, `select`, `radio` and `checkbox`.
+AMPATH Forms support multiple field types. The most common fields include `text`, `textarea`, `number`, `date`, `select`, `radio` and `checkbox`.
 
 Field types are defined in the `questionOptions` definition of a question using the following syntax:
 

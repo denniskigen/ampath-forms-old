@@ -1,4 +1,4 @@
-Documentation website for AMPATH forms https://ampath-forms.vercel.app.
+Documentation website for AMPATH Forms https://ampath-forms.vercel.app.
 
 ## Contributors ✨
 
