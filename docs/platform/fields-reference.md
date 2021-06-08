@@ -278,7 +278,7 @@ The code for this is as follows:
 
 ## radio
 
-Renders a radio input. You can select at most one option from a radio list.
+Renders a radio input. A radio input allows users to select an option from a list. All options are displayed at the same time and only one option from the available choices can be selected.
 
 Below is an example of a radio input for a field labelled `Type of Care` with options for HIV Care:
 
@@ -424,7 +424,7 @@ Renders a repeating group field.
 
 ## drug
 
-Renders a dropdown list that is hooked up to a drug `DataSource`. This field will only render concepts with class `Drug`.
+Renders a dropdown list that is hooked up to a Drug `DataSource`. This field will only render concepts with class `Drug`.
 
 ![Drug field](/img/fields-reference/drug.gif)
 
@@ -465,4 +465,4 @@ TODO
 
 ## problem
 
-TODO
+Renders a dropdown list that is hooked up to a Problem `DataSource`.

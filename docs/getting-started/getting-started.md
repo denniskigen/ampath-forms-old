@@ -25,12 +25,12 @@ Once logged in, you should see this landing page.
 Features on this page include:
 
 - The **Create New** button. Clicking on this launches the Schema Editor.
-- The **Forms List view** dropdown. You can use it to toggle between displaying Forms and Components.
-- The **Forms List search bar**. You can use it to search through the available Forms by name. You can also use the Published filter to limit your search to only forms that are published.
-- The **Forms List** - A list of all the Forms saved to the backend server. From it, you can see the Form names and versions, their published status, their retired status, and a list of actions you can take. These actions include the ability to:
-  - Edit a Form schema. Clicking the pen icon loads the selected form's schema in the [Schema Editor](#using-the-schema-editor).
-  - Download a Form schema.
-  - Import a Form schema.
+- The **Forms List view** dropdown. You can use it to toggle between displaying forms and Components.
+- The **Forms List search bar**. You can use it to search through the available forms by name. You can also use the Published filter to limit your search to only forms that are published.
+- The **Forms List** - A list of all the forms saved to the backend server. From it, you can see the form names and versions, their published status, their retired status, and a list of actions you can take. These actions include the ability to:
+  - Edit a form schema. Clicking the pen icon loads the selected form's schema in the [Schema Editor](#using-the-schema-editor).
+  - Download a form schema.
+  - Import a form schema.
 - **Pagination controls** - These are at the bottom of the Forms List. They allow you to navigate between the items in the Forms List.
 
 ## The Schema Editor
@@ -41,16 +41,16 @@ The Schema Editor is the area where you'll do most of your work.
 
 You can access the Schema Editor in two ways:
 
-- Clicking **Create New** to create a new Form or a Component.
-- Clicking the pen icon next to a Form in the Forms List to edit an existing schema.
+- Clicking **Create New** to create a new form or a Component.
+- Clicking the pen icon next to a form in the Forms List to edit an existing schema.
 
 ### Features
 
 - The interactive **Schema Builder**. Accessible by clicking the hamburger menu at the far left of the navigation bar.
 - The **File** menu. From it, you can either:
 
-  - Save a Form locally by persisting the schema to your browser's LocalStorage.
-  - Save a Form to the server.
+  - Save a form locally by persisting the schema to your browse's LocalStorage.
+  - Save a form to the server.
 
 - The **View** menu. Allows you to toggle between **Single View** and **Split View** modes.
 - The **Tasks** menu. Allows you to:
@@ -59,7 +59,7 @@ You can access the Schema Editor in two ways:
   - Validate Concepts.
 
 - The **User** menu. This menu shows information about the logged-in user.
-- The **Audit** menu. This menu shows audit information for a form schema. This information includes Form metadata such as the Form name, UUID, version, description, and the associated Encounter Type. It also shows who created or modified a Form and when.
+- The **Audit** menu. This menu shows audit information for a form schema. This information includes form metadata such as the form name, UUID, version, description, and the associated Encounter Type. It also shows who created or modified a form and when.
 - The **Referenced Forms** button. Clicking this button shows a list of components referenced by the active form. It also allows you to reference Components from a handy dropdown menu.
 
 :::info Components
@@ -67,7 +67,7 @@ Components are reusable forms that encapsulate related logic. They can be mixed 
 :::
 
 - The **Publish** button. Allows you to publish your form schema.
-- The **Schema Editor tab** renders a JSON-based representation of your Form schema in an embedded code editor.
-- The **Form Viewer** tab renders the visual representation of your Form schema once it gets compiled by the form engine.
-- The **Render** button. Clicking this button enables the Form engine to compile your Form schema. This step ensures that your Form schema is valid and free of errors.
+- The **Schema Editor tab** renders a JSON-based representation of your form schema in an embedded code editor.
+- The **Form Viewer** tab renders the visual representation of your form schema once it gets compiled by the form engine.
+- The **Render** button. Clicking this button enables the form engine to compile your form schema. This step ensures that your form schema is valid and free of errors.
 - The **build timestamp** at the bottom right of the page shows details relating to the current build version.

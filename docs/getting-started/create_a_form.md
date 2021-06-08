@@ -12,24 +12,23 @@ Visit the [AMPATH form builder](https://openmrs-spa.org/formbuilder/#/login) web
 
 ![Login page](/img/login.png)
 
-## Step 2. Create a Form
+## Step 2. Create a new Form
 
-Click the **Create New** button. You will be directed to the Schema Editor UI showing a basic form schema scaffold. A Form schema consists of pages, sections and questions. There are two ways to build your schema using the Form Builder:
+Click the **Create New** button. You will be directed to the Schema Editor UI showing a basic form schema scaffold. A form schema consists of pages, sections and questions. There are two ways to build your schema using the Form Builder:
 
 - Using the **Schema Builder** to build your form interactively. We'll use this approach for this guide.
 - Building your schema programmatically by definining a JSON schema in the Schema Editor.
 
-See the [Form](/platform/core-concepts#form) guide to learn more about Forms.
+See the [Form](/platform/core-concepts#form) guide to learn more about forms.
 
 ![Schema editor](/img/schema-editor.png)
 
 Launch the **Schema Builder** by clicking the hamburger menu in the top-left of the page to begin constructing your schema.
 
-Type in `Test POC Patient Consent Form v1.0` as the name of your Form. Click the green tick when done to update the schema.
+Type in `Test POC Patient Consent Form v1.0` as the name of your form. Click the green tick when done to update the schema.
 
-![Specify the name of the form](/img/add-form-name.png)
-
-Presently, the Form name has to contain the word **POC** for it to be deemed valid. For example, **Test POC form** is a valid Form name whereas **Yet Another Test form** is not.
+![Specify the name of the form](/img/add-form-name.
+Presently, the form name has to contain the word **POC** for it to be deemed valid. For example, **Test POC form** is a valid form name while **Yet Another Test form** is not.
 
 ## Step 3. Add a page
 
@@ -39,7 +38,7 @@ Add a page by clicking `Create new page`. This should launch a modal where you c
 
 ## Step 4. Add a section
 
-Add a section by clicking `Create new section`. We'll add a section to the Form labelled `Consent`. Sections are rendered in collapsed mode by default. Make sure to set `isExpanded` to `true` so the section gets rendered in expanded mode.
+Add a section by clicking `Create new section`. We'll add a section to the form labelled `Consent`. Sections are rendered in collapsed mode by default. Make sure to set `isExpanded` to `true` so the section gets rendered in expanded mode.
 
 ![Add a section to the form](/img/add-section.png)
 
@@ -140,7 +139,7 @@ The final schema in the Schema Editor should look like this:
 
 ## Step 6. Test your Form
 
-You can test your Form at any point in the development process by clicking the **Render** button. Provided you have a valid Form schema defined, this will allow you to test your Form and see the visual representation of your Form schema without having to first publish the Form.
+You can test your form at any point in the development process by clicking the **Render** button. Provided you have a valid form schema defined, this will allow you to test your form and see the visual representation of your form schema without having to first publish the form.
 
 The schema above gets rendered as:
 
@@ -148,10 +147,10 @@ The schema above gets rendered as:
 
 ## Step 7: Save your Form
 
-When you're done working on your Form, you can save the Form by going to **File** and then clicking **Save to Server**. Doing so launches a modal asking you to enter details related to your Form.
+When you're done working on your form, you can save the form by going to **File** and then clicking **Save to Server**. Doing so launches a modal asking you to enter details related to your form.
 
 ![Save modal](/img/save-modal.png)
 
-Press **OK** to save your Form, and then **Exit** to leave the Schema Editor.
+Press **OK** to save your form, and then **Exit** to leave the Schema Editor.
 
-You should now be able to see your new Form in the Forms List.
+You should now be able to see your new form in the Forms List.
