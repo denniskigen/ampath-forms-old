@@ -17,7 +17,7 @@ Visit the [AMPATH form builder](https://openmrs-spa.org/formbuilder/#/login) web
 Click the **Create New** button. You will be directed to the Schema Editor UI showing a basic form schema scaffold. A form schema consists of pages, sections and questions. There are two ways to build your schema using the Form Builder:
 
 - Using the **Schema Builder** to build your form interactively. We'll use this approach for this guide.
-- Building your schema programmatically by definining a JSON schema in the Schema Editor.
+- Building your schema programmatically by writing JSON code in the Schema Editor.
 
 See the [Form](/platform/core-concepts#form) guide to learn more about forms.
 

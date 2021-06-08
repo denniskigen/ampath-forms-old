@@ -20,7 +20,11 @@ A form is a collection of form fields. Forms are described using schemas written
 }
 ```
 
-Form schemas get constructed using the Schema Editor. When you launch the Schema Editor, you get presented with a default form scaffold that looks like the example schema shown above. The default schema comprises of the following:
+Form schemas get constructed using the Schema Editor. When you launch the Schema Editor, you get presented with a default form scaffold that looks like the example schema shown above.
+
+### Form properties
+
+The default schema comprises of the following properties:
 
 - `name`: The name of the form. Presently, form names must contain the word **POC** to be considered valid. For example, **Test POC form** is a valid form name while **Yet Another Test form** is not.
 
@@ -232,7 +236,11 @@ A question is a field in the form. Below is an example of a question that seeks 
 }
 ```
 
-All questions have a **label**, and **id**, a **rendering** type**,** and a set of **answers**. Here's a reference of the various properties you can specify in a question definition:
+All questions have a **label**, and **id**, a **rendering** type**,** and a set of **answers**.
+
+### Question properties
+
+Here's a reference of the various properties you can specify in a question definition:
 
 - `label`: The actual content of the question. This label is what gets rendered as the question label.
 - `id`: An ID unique to that question. Used when validating the field input.

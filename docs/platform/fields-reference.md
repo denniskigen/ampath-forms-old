@@ -280,7 +280,7 @@ The code for this is as follows:
 
 Renders a radio input. A radio input allows users to select an option from a list. All options are displayed at the same time and only one option from the available choices can be selected.
 
-Below is an example of a radio input for a field labelled `Type of Care` with options for HIV Care:
+Below is an example of a radio input for a field labelled `Type of Care`:
 
 ![Radio field](/img/fields-reference/radio.png)
 
