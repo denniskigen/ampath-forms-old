@@ -282,7 +282,7 @@ Renders a radio input. A radio input allows users to select an option from a lis
 
 Below is an example of a radio input for a field labelled `Type of Care` with options for HIV Care:
 
-![Radio field](/img/fields-reference/radio.png).
+![Radio field](/img/fields-reference/radio.png)
 
 The code for this is as follows:
 
