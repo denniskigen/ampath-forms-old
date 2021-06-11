@@ -10,6 +10,7 @@ module.exports = {
   organizationName: "AMPATH", // Usually your GitHub org/user name.
   projectName: "", // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     navbar: {
       title: "AMPATH Forms",
       logo: {
