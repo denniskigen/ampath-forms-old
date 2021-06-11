@@ -36,6 +36,20 @@ The default schema comprises of the following properties:
 
 - `processor`: Defaults to `EncounterFormProcessor`. The form processor converts an OpenMRS REST form response into a format that the form renderer can render and display. Conversely, the form processor also converts the submitted form payload into a format that the REST backend can understand.
 
+### Components
+
+There may be situations where you might want to separate commonly-used form logic into disparate reusable bits. In such cases, you might want to structure that logic as a component form. Component forms, or components for short, can therefore be thought of as reusable forms that carry domain-specific information. Imagine a situation where you're creating a bunch of Forms for use in a Point-of-Care setting. You might find that multiple forms might need to have sections for collecting Pre-Clinic Review information. This Pre-Clinic Review information could include details such as:
+
+- A patient's current HIV status
+- Whether a visit was scheduled or not
+- Reasons for a visit
+- The current visit type
+- A patient's insurance information
+
+Now imagine having to define all of these sections and their accompanying questions in each of your forms. Components are the perfect tool for such situations. We'd need to create a Pre-Clinic Review component with all the relevant sections and questions. We'd then only need to reference this component in our forms and pick only the sections and questions we want.
+
+As mentioned before, components and forms are functionally similar. The only difference between them is that you must use the prefix `component` in form name when defining a component. You can view a list of all the components available in the system by toggling the Forms List view from `POC Forms` to `Component Forms`. Read more about components in the [Referencing forms](/platform/referencing-forms) guide.
+
 ## Page
 
 Each page in your form schema gets rendered in a separate tab in the form viewer, so a page can be thought of as a way to encapsulate related form logic. Below is an example of a page definition for a page capturing information related to an encounter. This page definition consists of a page **label**, `Encounter Details` and a **sections** array. The page has one section labelled `Encounter Info`. That section, in turn, has two questions labelled `Provider` and `Facility Name`, respectively.
@@ -271,7 +285,7 @@ Here's a reference of the various properties you can specify in a question defin
     }
     ```
 
-  - `calculate`: An object where you can specify `calculateExpressions`. These are predefined expression helpers that take inputs and return numeric values. Read more about calculateExpressions in the [Expression helper reference](/platform/expression-helper-functions).
+  - `calculate`: An object where you can specify `calculateExpressions`. These are predefined expression helpers that take inputs and return numeric values. Read more about calculateExpressions in the [Expression helper](/platform/expression-helper-functions) reference.
 
     ```json
     {

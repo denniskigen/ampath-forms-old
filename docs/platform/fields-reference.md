@@ -354,7 +354,74 @@ The code for this is as follows:
 
 ## group
 
-TODO
+```json
+{
+  "label": "Transfer Out",
+  "questions": [
+    {
+      "type": "obsGroup",
+      "label": "Transfer care to other centre",
+      "questionOptions": {
+        "concept": "a8a170e2-1350-11df-a1f1-0026b9348838",
+        "rendering": "group"
+      },
+      "questions": [
+        {
+          "label": "Transfer care to other centre:",
+          "id": "transferOut",
+          "questionOptions": {
+            "concept": "a89c2e5c-1350-11df-a1f1-0026b9348838",
+            "answers": [
+              {
+                "concept": "a89c2f42-1350-11df-a1f1-0026b9348838",
+                "label": "AMPATH"
+              },
+              {
+                "concept": "a89c301e-1350-11df-a1f1-0026b9348838",
+                "label": "Non-AMPATH"
+              },
+              {
+                "concept": "a8a17d80-1350-11df-a1f1-0026b9348838",
+                "label": "MCH"
+              }
+            ],
+            "rendering": "select"
+          },
+          "type": "obs",
+          "validators": []
+        },
+        {
+          "type": "personAttribute",
+          "label": "Specify name of AMPATH clinic to which patient is being referred:",
+          "id": "transfered_out_to_ampath",
+          "required": "false",
+          "questionOptions": {
+            "rendering": "ui-select-extended",
+            "attributeType": "8d87236c-c2cc-11de-8d13-0010c6dffd0f"
+          },
+          "hide": {
+            "hideWhenExpression": "transferOut !== 'a89c2f42-1350-11df-a1f1-0026b9348838'"
+          }
+        },
+        {
+          "type": "obs",
+          "label": "If Non-AMPATH specify where the patient is being referred:",
+          "id": "transfered_out_to_non_ampath",
+          "required": "false",
+          "default": "",
+          "questionOptions": {
+            "rendering": "text",
+            "concept": "a8a06fc6-1350-11df-a1f1-0026b9348838"
+          },
+          "hide": {
+            "hideWhenExpression": "transferOut !== 'a89c301e-1350-11df-a1f1-0026b9348838'"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## repeating
 
@@ -465,4 +532,6 @@ TODO
 
 ## problem
 
-Renders a dropdown list that is hooked up to a Problem `DataSource`.
+Renders a dropdown list that is hooked up to a Problem `DataSource`. This field will include answers that have the `Diagnosis`, `Problem` or `Symptom` class.
+
+![Problem field](/img/fields-reference/problem.gif)
