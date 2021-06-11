@@ -13,10 +13,62 @@ This feature of the Form Builder allows you to build your forms by importing log
 - An HIV status section
 - A Tuberculosis treatment section
 
-It is possible to encapsulate each of the above pieces into a disparate reusable component. You'd then have, say, a Pre-Clinic Review component that handles pre-clinic review concerns. This component would have sections such as:
+It is possible to encapsulate each of the above pieces into a disparate reusable component. You would then have, say, a Pre-Clinic Review component that handles pre-clinic review concerns. This component would have sections such as:
 
 - A patient's current HIV status
 - Whether a visit was scheduled or not
 - Reasons for a visit
 - The current visit type
 - A patient's insurance information
+
+This component could look something like this:
+
+![Pre-Clinic Review component](/img/pre-clinic-review-component.png)
+
+So if, for example, you were constructing a new Cervical Cancer screening visit form, you might want to pick just the Pre-Clinic Review section from that component. Below if a guide for how you can achieve this:
+
+## Example: Referencing the Pre-Clinic Review component
+
+:::info
+For this guide, we will assume that we are working on a new form.
+:::
+
+### Step 1. Launch form in Schema Editor
+
+Click the Create New button to launch the Schema Editor.
+
+### Step 2. Reference the Component
+
+Launch the Schema Builder by clicking the hamburger menu in the top-left corner of the page. Click Create a new page and enter `Preclinical Review` as the page label.
+
+Click Reference Section and enter `component_oncology-preclinic-review-v1.2` as the form name.
+
+![Referencing a section](/img/referencing-a-section.png)
+
+A modal should appear asking you to choose the sections you want to reference. We will select two sections:
+`Pre-Clinic Review` and `Reasons for Current Visit`. Make sure to tick the boxes next to those labels.
+
+Further, we want to limit which questions we want to show from those sections. Expand the `Reasons for Current Visit` question and remove the last two questions labelled:
+
+- What insurance do you have?
+- Do you have a family member or caregiver who assists you with taking care of your health needs?
+
+By this point, you should have the following options in your section reference configuration:
+
+![Final reference configuration](/img/completed-section-reference.png)
+
+The Schema Builder panel should show the following layout:
+
+![Section reference in the Schema Builder](/img/section-reference-view.png)
+
+Exit the Schema Builder by clicking anywhere on the page. Click the blue Render button to compile the form. Once you see the `Schema updated` alert, click the `Form Viewer` tab to see the visual representation of our form.
+
+![Compiled form](/img/compiled-form.png)
+
+You can follow this approach to reference as many component forms as you wish. Once done, click File > Save to Server to save your form.
+
+As you've observed, component forms provide a powerful mechanism for encapsulating shared form logic into reusable chunks.
+
+### Addendum
+
+TODO: Mention the `Reference Forms` button.
