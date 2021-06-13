@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Referencing Forms
 
-This feature of the Form Builder allows you to build your forms by importing logic from [component forms](/platform/core-concepts#components). Components are a mechanism for grouping together domain-specific form logic into disparate, reusable bits. You can mix and match components to create forms of arbitrary complexity. Imagine building a form for use in HIV Testing. This form might require the following sections:
+This feature of the Form Builder allows you to build your forms by importing logic from [component forms](/getting-started/core-concepts#components). Components are a mechanism for grouping together domain-specific form logic into disparate, reusable bits. You can mix and match components to create forms of arbitrary complexity. Imagine building a form for use in HIV Testing. This form might require the following sections:
 
 - A pre-clinic review section
 - A vitals section

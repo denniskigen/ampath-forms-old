@@ -12,7 +12,7 @@ AMPATH Forms enables you to add arbitrarily complex validation to your form inpu
 
 ## Date-based validation
 
-This type of validation enforces certain conditions for [date](/platform/fields-reference#date) inputs. You can use date-based validation to guarantee that a Date input only allows:
+This type of validation enforces certain conditions for [date](/advanced-topics/fields-reference#date) inputs. You can use date-based validation to guarantee that a Date input only allows:
 
 - Past or present dates
 - Past, present or future dates

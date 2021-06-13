@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Create a Form
+# Creating Forms
 
 Let's take you from zero to published in just a few minutes.
 
@@ -19,7 +19,7 @@ Click the **Create New** button. You will be directed to the Schema Editor UI sh
 - Using the **Schema Builder** to build your form interactively. We'll use this approach for this guide.
 - Building your schema programmatically by writing JSON code in the Schema Editor.
 
-See the [Form](/platform/core-concepts#form) guide to learn more about forms.
+See the [Form](/getting-started/core-concepts#form) guide to learn more about forms.
 
 ![Schema editor](/img/schema-editor.png)
 
@@ -48,7 +48,7 @@ Add a question by clicking `Create new question`.
 
 ![Add a question to the form](/img/add-question.png)
 
-This launches the **Question Editor** panel. Read more about what constitutes a question definition in the [Question](/platform/core-concepts#question) guide.
+This launches the **Question Editor** panel. Read more about what constitutes a question definition in the [Question](/getting-started/core-concepts#question) guide.
 
 ![Concept search modal](/img/concept-modal.png)
 

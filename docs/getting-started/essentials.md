@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Getting Started
+# Basics
 
 ## The Form Builder
 
@@ -44,7 +44,7 @@ You can access the Schema Editor in two ways:
 - Clicking **Create New** to create a new form or a Component.
 - Clicking the pen icon next to a form in the Forms List to edit an existing schema.
 
-### Features
+### Features of the Schema Editor
 
 - The interactive **Schema Builder**. Accessible by clicking the hamburger menu at the far left of the navigation bar.
 - The **File** menu. From it, you can either:
@@ -63,7 +63,7 @@ You can access the Schema Editor in two ways:
 - The **Referenced Forms** button. Clicking this button shows a list of components referenced by the active form. It also allows you to reference Components from a handy dropdown menu.
 
 :::info Components
-Components are reusable forms that encapsulate related logic. They can be mixed and matched to create complex forms. Read more about this components in the [Referencing Forms](/platform/referencing-forms) guide.
+Components are reusable forms that encapsulate related logic. They can be mixed and matched to create complex forms. Read more about this components in the [Referencing Forms](/guides/referencing-forms) guide.
 :::
 
 - The **Publish** button. Allows you to publish your form schema.

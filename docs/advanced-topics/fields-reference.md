@@ -96,7 +96,7 @@ The code for this is as follows:
 
 Renders a dropdown list.
 
-Below is an example of a select field from a Cervical Cancer screening visit form. Clicking inside the field reveals a dropdown with a list of options. You can only select one option from a select field. If you wish to be able to select more than one option, use a [multiCheckbox](/platform/fields-reference#multicheckbox) field instead.
+Below is an example of a select field from a Cervical Cancer screening visit form. Clicking inside the field reveals a dropdown with a list of options. You can only select one option from a select field. If you wish to be able to select more than one option, use a [multiCheckbox](/advanced-topics/fields-reference#multicheckbox) field instead.
 
 ![Select field](/img/fields-reference/select.png)
 
